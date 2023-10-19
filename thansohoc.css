@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
     text-decoration: none;
     flex-direction: var(--flex-direction);
 }
@@ -43,33 +42,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 10%;
-}
-
-.logo img {
-    max-width: 120px;
-    height: auto;
-}
-
-#header .icon-home a {
-    font-family: 'Oswald', serif;
-    font-size: 20px;
-    color: #fff;
-    text-transform: capitalize;
-    font-weight: 400;
-    transition: all .42s ease;
-}
-
-#header .icon-home:hover {
-    color: #EE1C47;
-}
-
-#header .icon-home .bx {
-    font-size: 20px;
-}
-
-.dropdown-container .bx {
-    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 2%;
 }
 
 .nav-menu {
@@ -82,12 +57,11 @@ body {
 .nav-menu a {
     font-family: 'Oswald', sans-serif;
     color: #fff;
+    padding-right: 100px;
+    text-decoration: none;
     font-size: 20px;
-    text-transform: capitalize;
-    padding: 3px 20px;
     font-weight: 400;
     transition: all .42s ease;
-    text-decoration: none;
 }
 
 .nav-menu a:hover {
@@ -112,45 +86,6 @@ body {
     z-index: 10001;
     cursor: pointer;
 }
-
-.dropdown-container {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-trigger {
-    color: #fff;
-    font-size: 20px;
-    text-transform: capitalize;
-    padding: 3px 20px;
-    font-weight: 400;
-    transition: all .42s ease;
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-  
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-}
-
-.dropdown-container:hover .dropdown-content {
-    display: block;
-}
 /*End: Header*/
 
 /*Begin: Info*/
@@ -159,7 +94,7 @@ body {
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
-    background-image: url(image/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai.jpg);
+    background-image: url(image/Our\ numerology\ calculator\ performs\ tens\ of\ thousands\ of\ complex\ calculations\ in\ just\ 1\ SECOND.\ Interpretations\ are\ based\ on\ in-depth\ research\ by\ numerology\ experts..png);
     color: #fff;
 }
 
@@ -346,9 +281,9 @@ input[type="text"]::placeholder {
 }
 
 #application img {
-    width: 300px; 
-    margin: 0 5px 10px 5px; 
-    display: inline-block;
+    min-width: 200px;
+    max-width: 280px; 
+    margin: 0 5px 10px 30px;
     opacity: 0;
     animation: reveal 0.8s forwards var(--d);
 }
@@ -410,20 +345,20 @@ input[type="text"]::placeholder {
     font-weight: 500;
     font-size: 40px;
     color: #fff;
-   text-align: center;
-   padding-bottom: 40px;
-   opacity: 0;
-   animation: reveal 0.8s forwards var(--d);
+    text-align: center;
+    padding-bottom: 40px;
+    opacity: 0;
+    animation: reveal 0.8s forwards var(--d);
 }
 
 #numbers .row1 {
-    display: inline-block;
     margin: 10px;
-    width: 100%;
     min-width: 200px;
     max-width: 280px;
     text-align: center;
     perspective: 50em;
+    display: inline-block;
+    justify-content: center;
 }
 #number .row1 * {
     box-sizing: padding-box;
@@ -498,6 +433,7 @@ input[type="text"]::placeholder {
 
 /*Begin: Contact*/
 #contact {
+    padding: 2% 10%;
     background:#132043;
 }
 
@@ -508,8 +444,7 @@ input[type="text"]::placeholder {
 }
 
 .first-info img {
-    width: 140px;
-    height: auto;
+    padding-bottom: 5px;
 }
 
 .contact-info h4 {
@@ -572,10 +507,14 @@ input[type="text"]::placeholder {
     #menu-icon {
         display: block;
     }
+    #header img {
+        width: 100%;
+        height: auto;
+    }
     .nav-menu {
         position: absolute;
         top: 100%;
-        left: -100%;
+        right: -100%;
         width: 200px;
         height: 200px;
         background-color: #747abb;
@@ -592,7 +531,7 @@ input[type="text"]::placeholder {
         padding: 0 25px;
     }
     .nav-menu.open {
-        left: 0%;
+        right: 0%;
     }
     #info {
         height: auto;
@@ -618,4 +557,8 @@ input[type="text"]::placeholder {
         width: 95%;
         height: auto;
     }
+    .first-info img {
+        width: 100%;
+        height: auto;
+    } 
 }

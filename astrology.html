@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Astrology</title>
-    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRosdg2T_7T0ww2svdYM_-xqUXw2BntUit_vsRhlhtyu2umJTbyyT5WEL9MSZsigRBV3fM&usqp=CAU">
+    <link rel="icon" type="image/x-icon" href="image/logo1.png">
     <link rel="stylesheet" href="astrology.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +19,9 @@
 <body>        
 <!--Begin: Header -->
 <header id="header">
-    <div id="menu-icon"> <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></div>
-    <a href="astrology.html" class="logo"><img src="" alt=""></a>
+    <a href="astrology.html" class="logo"><img src="image/logo.png" alt=""></a>
     <ul class="nav-menu">
         <li><a href="astrology.html"><i class='bx bx-home'></i> HOME</a></li>
-
         <a href="bandosao.html">STAR MAP</a>
         <a href="thansohoc.html">NUMEROMETRY</a>
         <a href="cunghoangdao.html">ZODIAC</a>
@@ -34,6 +32,7 @@
         <a href=""><i class="bx bx-user"></i></a>
         <a href=""><i class="bx bx-cart"></i></a>
     </div>
+    <div id="menu-icon"> <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></div>
 </header>
 <!--End: Header-->
     
@@ -81,31 +80,23 @@
     <div id="abtus">
         <div class="right-half">
             <h1 style="--d: .4s">ABOUT US</h1>
-            <p class="paragraph">
+            <p style="--d: .8s" class="paragraph">
                 <span style="--d: .5s;">HIPPO is a project that provides information and knowledge about numerology in a digital format, aiming to offer practical applications in our daily lives and fascinating insights into both human nature and the natural world within the vast universe.</span>
-                <span style="--d: .8s;">With over a decade of research, the team of readers at HIPPO has gained deep expertise in the field of numerology, along with complex and advanced techniques and algorithms. We focus on developing products to help you understand your individual personality, love life, career, and future predictions. HIPPO aims to make it easier for customers to access numerology through modern technological approaches, completely different from traditional methods.</span>
+                <p style="--d: .8s;">With over a decade of research, the team of readers at HIPPO has gained deep expertise in the field of numerology, along with complex and advanced techniques and algorithms. We focus on developing products to help you understand your individual personality, love life, career, and future predictions. HIPPO aims to make it easier for customers to access numerology through modern technological approaches, completely different from traditional methods.</p>
             </p>
-            <!--<p>
-                HIPPO is a project that provides information and knowledge about numerology in a digital format, aiming to offer practical applications in our daily lives and fascinating insights into both human nature and the natural world within the vast universe.
-            </p>
-            <p>
-                With over a decade of research, the team of readers at HIPPO has gained deep expertise in the field of numerology, along with complex and advanced techniques and algorithms. We focus on developing products to help you understand your individual personality, love life, career, and future predictions. HIPPO aims to make it easier for customers to access numerology through modern technological approaches, completely different from traditional methods.
-            </p>-->
         </div>
     
     <div class="left-half">
         <img style="--d: .5s;" src="image/ra.png" alt="">
     </div>
-
-   
     </div>
     <!--End: AboutUs-->
 
     <!--Begin: Ảnh-->
     <div id="image-container">
-        <figure class="snip1581"><img src="image/home/combo1.jpg" alt="profile-sample2"/></figure>
-        <figure class="snip1581"><img src="image/home/tuvan.jpg" alt="profile-sample7"/></figure>
-        <figure class="snip1581"><img src="image/home/giaima.jpg" alt="profile-sample6"/></figure>
+        <figure class="image"><img src="image/home/combo1.jpg" alt=""/></figure>
+        <figure class="image"><img src="image/home/tuvan.jpg" alt=""/></figure>
+        <figure class="image"><img src="image/home/giaima.jpg" alt=""/></figure>
     </div>      
     <!--End: Ảnh-->
     
@@ -195,7 +186,7 @@
                 </div>
                 <div class="input-group">
                     <div class="half">
-                        <label for="firstName">PHONE NUMBER**</label>
+                        <label for="firstName">PHONE NUMBER*</label>
                         <input type="text" id="firstName" name="firstName" placeholder="Your phone number...">
                     </div>
                     <div class="half">
@@ -217,7 +208,10 @@
                         <input type="text" id="birthPlace" name="birthPlace" placeholder="Place of birth">
                     </div>
                 </div>
-                <button id="submitBtn" type="submit">SIGN UP</button>
+                <div class="submitBtn">
+                    <button type="submit">SIGN UP</button>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -256,6 +250,7 @@
     <div id="contact">
         <div class="contact-info">
             <div class="first-info">
+                <a href="astrology.html" class="logo"><img src="image/logo.png" alt=""></a>
                 <p><i class='bx bxs-map-pin'></i> 14 Alley 11, Vuong Thua Vu Street, Khuong Trung Ward, Thanh Xuan District, Hanoi, Vietnam</p>
             </div>
 

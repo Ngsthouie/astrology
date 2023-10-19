@@ -42,33 +42,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 10%;
-}
-
-.logo img {
-    max-width: 120px;
-    height: auto;
-}
-
-#header .icon-home a {
-    font-family: 'Oswald', serif;
-    font-size: 20px;
-    color: #fff;
-    text-transform: capitalize;
-    font-weight: 400;
-    transition: all .42s ease;
-}
-
-#header .icon-home:hover {
-    color: #EE1C47;
-}
-
-#header .icon-home .bx {
-    font-size: 20px;
-}
-
-.dropdown-container .bx {
-    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 2%;
 }
 
 .nav-menu {
@@ -81,12 +57,11 @@ body {
 .nav-menu a {
     font-family: 'Oswald', sans-serif;
     color: #fff;
+    padding-right: 100px;
+    text-decoration: none;
     font-size: 20px;
-    text-transform: capitalize;
-    padding: 3px 20px;
     font-weight: 400;
     transition: all .42s ease;
-    text-decoration: none;
 }
 
 .nav-menu a:hover {
@@ -111,7 +86,7 @@ body {
     z-index: 10001;
     cursor: pointer;
 }
-/*End: Header*/ 
+/*End: Header*/
 
 /*Style for main section*/
 #main .img-bd, #main .img-bd2 {
@@ -193,7 +168,7 @@ body {
 
 /*Begin: Contact*/
 #contact {
-    padding: 5% 10%;    
+    padding: 2% 10%;
     background:#132043;
 }
 
@@ -204,8 +179,7 @@ body {
 }
 
 .first-info img {
-    width: 140px;
-    height: auto;
+    padding-bottom: 5px;
 }
 
 .contact-info h4 {
@@ -268,6 +242,10 @@ body {
     #menu-icon {
         display: block;
     }
+    #header img {
+        width: 100%;
+        height: auto;
+    }
     .nav-menu {
         position: absolute;
         top: 100%;
@@ -308,4 +286,8 @@ body {
     #content h1 {
         font-size: 30px;
     }
+    .first-info img {
+        width: 100%;
+        height: auto;
+    }  
 }

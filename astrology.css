@@ -8,10 +8,6 @@
     flex-direction: var(--flex-direction);
 }
 
-section {
-    padding: 5% 10%;
-}
-
 body {
     background-image: url(image/home/bgk.png);
 }
@@ -46,24 +42,7 @@ body {
     justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 10px;
-}
-
-
-#header .icon-home a {
-    font-family: 'Oswald', serif;
-    font-size: 20px;
-    color: #fff;
-    text-transform: capitalize;
-    font-weight: 400;
-    transition: all .42s ease;
-}
-
-#header .icon-home:hover {
-    color: #EE1C47;
-}
-
-#header .icon-home .bx {
-    font-size: 20px;
+    padding-left: 2%;
 }
 
 .nav-menu {
@@ -76,12 +55,11 @@ body {
 .nav-menu a {
     font-family: 'Oswald', sans-serif;
     color: #fff;
+    padding-right: 100px;
+    text-decoration: none;
     font-size: 20px;
-    text-transform: capitalize;
-    padding: 3px 20px;
     font-weight: 400;
     transition: all .42s ease;
-    text-decoration: none;
 }
 
 .nav-menu a:hover {
@@ -128,8 +106,10 @@ body {
 
 .paragraph span {
     display: flex;
+    text-align: justify;
     opacity: 0;
     animation: reveal 0.8s forwards var(--d);
+    text-indent: 50px
 }
 
 #abtus .right-half h1 {
@@ -137,9 +117,10 @@ body {
     color: #2c2c2c;
     font-weight: 500;
     font-size: 42px;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(140, 141, 142);
     opacity: 0;
     animation: reveal 0.8s forwards var(--d);
-    text-shadow: 5px 5px 5px rgb(140, 141, 142);
 }
 
 #abtus .right-half {
@@ -152,6 +133,9 @@ body {
     margin-bottom: 1em;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
+    text-align: justify;
+    opacity: 0;
+    animation: reveal 0.8s forwards var(--d);
 }
 
 #abtus .left-half img {
@@ -171,7 +155,7 @@ body {
     align-items: center; 
 }
   
-.snip1581 {
+.image {
     overflow: hidden;
     margin: 10px;
     min-width: 280px;
@@ -181,18 +165,17 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
   
-.snip1581 * {
+.image * {
     transition: all 0.35s;
-    box-sizing: border-box;
 }
   
-.snip1581 img {
+.image img {
     max-width: 100%;
     vertical-align: top;
 }
   
-.snip1581:hover img,
-.snip1581.hover img {
+.image:hover img,
+.image.hover img {
     transform: scale(1.3) rotate(5deg);
 }
 /*End: Ảnh*/
@@ -208,6 +191,7 @@ body {
 
 #content h1 {
     font-family: 'Oswald', sans-serif;
+    text-align: center;
     color: #2c2c2c;
     font-weight: 500;
     flex: 100%;
@@ -243,6 +227,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     opacity: 0;
+    text-align: justify;
     animation: reveal 0.8s forwards var(--d);
 }
 /*End: Content*/
@@ -403,6 +388,8 @@ body {
 #info p {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
+    text-align: justify;
+    line-height: 2em;
 }
 
 #info span {
@@ -416,7 +403,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
     padding-right: 60px;
 }
 
@@ -451,9 +437,14 @@ input {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
-/* Style the submit button */
+/* Style the submit button*/
+#info .submitBtn {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-#submitBtn {
+#info button {
     margin-top: 20px;
     background: #695EBD;
     width: 150px;
@@ -465,9 +456,10 @@ input {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    align-items: center;
 }
 
-#submitBtn:hover {
+#info button:hover {
     background-color: #D6173E;
     font-weight: 600;
 }
@@ -531,7 +523,7 @@ input {
 
 /*Begin: Contact*/
 #contact {
-    padding: 5% 10%;    
+    padding: 2% 10%;
     background:#132043;
 }
 
@@ -542,8 +534,7 @@ input {
 }
 
 .first-info img {
-    width: 140px;
-    height: auto;
+    padding-bottom: 5px;
 }
 
 .contact-info h4 {
@@ -613,10 +604,14 @@ input {
     #menu-icon {
         display: block;
     }
+    #header img {
+        width: 100%;
+        height: auto;
+    }
     .nav-menu {
         position: absolute;
         top: 100%;
-        left: -100%;
+        right: -100%;
         width: 200px;
         height: 200px;
         background-color: #747abb;
@@ -633,7 +628,7 @@ input {
         padding: 0 25px;
     }
     .nav-menu.open {
-        left: 0%;
+        right: 0%;
     }
     .info-container {
         display: block;
@@ -675,6 +670,10 @@ input {
     .cart img {
         width: 95%;
     }
+    .first-info img {
+        width: 100%;
+        height: auto;
+    }   
 }
 @media (max-width: 320px) {
     #image-container img {

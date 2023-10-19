@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BẢN ĐỒ SAO</title>
-    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRosdg2T_7T0ww2svdYM_-xqUXw2BntUit_vsRhlhtyu2umJTbyyT5WEL9MSZsigRBV3fM&usqp=CAU">
+    <link rel="icon" type="image/x-icon" href="image/logo1.png">
     <!-- CSS Link -->
     <link rel="stylesheet" href="bandosao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +15,11 @@
 </head>
 
 <body>
-<!-- New Header -->
+<!--Begin: Header -->
 <header id="header">
-    <div id="menu-icon"> <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></div>
-    <a href="astrology.html" class="logo"><img src="" alt=""></a>
+    <a href="astrology.html" class="logo"><img src="image/logo.png" alt=""></a>
     <ul class="nav-menu">
         <li><a href="astrology.html"><i class='bx bx-home'></i> HOME</a></li>
-
         <a href="bandosao.html">STAR MAP</a>
         <a href="thansohoc.html">NUMEROMETRY</a>
         <a href="cunghoangdao.html">ZODIAC</a>
@@ -32,6 +30,7 @@
         <a href=""><i class="bx bx-user"></i></a>
         <a href=""><i class="bx bx-cart"></i></a>
     </div>
+    <div id="menu-icon"> <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></div>
 </header>
 <!--End: Header-->
 
@@ -59,21 +58,21 @@
         <div class="info-fields">
             <div class="field">
                 <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name...">
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name...">
             </div>
             <div class="field">
                 <label for="birthdate">Date of Birth:</label>
                 <input type="date" id="birthdate" name="birthdate">
-                <span class="note">(If you don't know the time of birth, select 11:59 AM)</span>
             </div>
             <div class="field">
                 <label for="birthhour">Time of Birth:</label>
+                <span class="note">*If you don't know the time of birth, select 11:59 AM.</span>
                 <input type="time" id="birthhour" name="birthhour">
             </div>
             <div class="field">
                 <label for="birthplace">Place of Birth:</label>
-                <input type="text" id="birthplace" name="birthplace" placeholder="Enter the place of birth...">
                 <span class="note">*If not found, enter the name of a nearby major city.</span>
+                <input type="text" id="birthplace" name="birthplace" placeholder="Enter the place of birth...">
             </div>
             <div class="action-button">
                 <button>VIEW CHART</button>
@@ -152,9 +151,10 @@
 <!--End: Value-->
 
 <!--Begin: Contact-->
-<section id="contact">
+<div id="contact">
     <div class="contact-info">
         <div class="first-info">
+            <a href="astrology.html" class="logo"><img src="image/logo.png" alt=""></a>
             <p><i class='bx bxs-map-pin'></i> 14 Alley 11, Vuong Thua Vu Street, Khuong Trung Ward, Thanh Xuan District, Hanoi, Vietnam</p>
         </div>
 
@@ -181,7 +181,7 @@
             <p>Customer Support</p>
         </div>
     </div>
-</section>
+</div>
 <!--End: Contact-->
 
 <script src="main.js"> </script>
