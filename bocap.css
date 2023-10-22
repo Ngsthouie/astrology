@@ -156,6 +156,7 @@ body {
     font-size: 18px;
     padding: 0 5%;
     margin-bottom: 1em;
+    text-align: justify;
 }
 
 #content ul li {
@@ -236,6 +237,9 @@ body {
         padding: 5px 0;
         margin: 0 20px;
     }
+    .my-divider1 {
+        width: 100%;
+    }
 }
 
 @media (max-width: 890px) {
@@ -249,7 +253,7 @@ body {
     .nav-menu {
         position: absolute;
         top: 100%;
-        left: -100%;
+        right: -100%;
         width: 200px;
         height: 200px;
         background-color: #747abb;
@@ -266,7 +270,7 @@ body {
         padding: 0 25px;
     }
     .nav-menu.open {
-        left: 0%;
+        right: 0%;
     }
     #main .img-bd img {
         width: 100%;
